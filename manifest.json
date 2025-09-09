@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "ShipHaven Shipping Service Highlighter",
+  "version": "1.0",
+  "description": "This extension highlights shipping services on ShipHaven.",
+
+  "icons": {
+    "16": "images/wdicon_16x16.png",
+    "32": "images/wdicon_32x32.png",
+    "48": "images/wdicon_48x48.png",
+    "128": "images/wdicon_128x128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "*://ship.shipheaven.com/*",
+        "*://englandship.rocksolidinternet.com/*"
+      ]
+    }
+  ]
+}
